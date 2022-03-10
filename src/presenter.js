@@ -1,3 +1,4 @@
+import verificar from "./verificador";
 
 const titulo = document.querySelector("#titulo");
 const descripcion = document.querySelector("#descripcion");
@@ -10,5 +11,5 @@ form.addEventListener("submit", (event) => {
   const title = titulo.value;
   const desc = descripcion.value;
 
-  div.innerHTML = "<p> Publicacion: <br><br>"+ title + "<br>"+ desc +"</p>";
+  div.innerHTML = "<p> Publicacion: <br><br>"+ verificar(title) + "<br>"+ desc +"</p>";
 });
